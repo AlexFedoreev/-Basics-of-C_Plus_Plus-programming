@@ -1,7 +1,7 @@
-#include <iostream>
+ο»Ώ#include <iostream>
 
 int main() {
     setlocale(LC_ALL, "Russian");
-    std::cout << "ΐλεκρει\n";
+    std::cout << "ΠΠ»ΠµΠΊΡΠµΠΉ\n";
     std::cout << 26 << "\n";
 }
