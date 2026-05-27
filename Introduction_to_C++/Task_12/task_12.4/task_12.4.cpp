@@ -60,7 +60,6 @@ int main() {
 	}
 	outFile.close();
 
-	std::cout << std::endl;
 
 	int rows1{}, cols1{};
 	std::ifstream inpFile{ "in.txt" };
@@ -81,7 +80,9 @@ int main() {
 	}
 	inpFile.close();
 
-	//Вывод массива на экран для проверки записи в файл
+
+	std::cout << "Массив, считанный с файла:" << std::endl;
+	//Вывод массива, считанного с файла, на экран
 	for (int i5 = 0; i5 < rows; i5++) {
 		for (int j5 = 0; j5 < cols; j5++) {
 			std::cout << inpArr[i5][j5] << " ";
