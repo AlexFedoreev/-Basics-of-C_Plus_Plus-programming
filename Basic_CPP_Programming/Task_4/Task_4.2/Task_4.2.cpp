@@ -65,7 +65,8 @@ protected:
 	double a, b, c, d;
 	unsigned int A, B, C, D;
 public:
-	FrSdFigure() : Figure() { numEdges = 4; figureName = "Квадрат"; };
+	FrSdFigure() : Figure() { numEdges = 4; figureName = "Четырёхугольник"; 
+	a = 10; b = 20; c = 10; d = 20; A = 90; B = 90; C = 90, D = 90;};
 	void printInfoFigure() const override {
 		std::cout << figureName << std::endl;
 		std::cout << "Стороны:" << " a=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
@@ -120,19 +121,23 @@ int main() {
 	SetConsoleOutputCP(CP_UTF8);
 	SetConsoleCP(CP_UTF8);
 
+	ThrSdFigure TSd1{};
 	EqSidTriangle T1{};
 	IssSidTriangle T2{};
 	RgtAngTriangle T3{};
 
+	FrSdFigure FSd1{};
 	Rectangle1 S1{};
 	Square S2{};
 	Parllgramm S3{};
 	Rhombus S4{};
 
+	print_info(&TSd1);
 	print_info(&T1);
 	print_info(&T2);
 	print_info(&T3);
 	
+	print_info(&FSd1);
 	print_info(&S1);
 	print_info(&S2);
 	print_info(&S3);
