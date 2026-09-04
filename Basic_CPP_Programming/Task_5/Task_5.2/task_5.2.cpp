@@ -15,11 +15,11 @@ int main() {
 
     Counter c1;
 
-    if (ans == "Да") {
+    if (ans == "Yes") {
         int inpC{};
         std::cout << "Введите начальное значение счётчика:" << std::endl;
         std::cin >> inpC;
-        Counter c1(inpC);
+        c1 = Counter(inpC);
     }
     else {
         Counter c1(1);

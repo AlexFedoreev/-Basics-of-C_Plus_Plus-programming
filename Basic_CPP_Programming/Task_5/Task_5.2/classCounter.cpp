@@ -1,11 +1,8 @@
 #include "classCounter_h.h"
 
 #include <cstdlib>
+   
     
-
-    Counter::Counter() : counterVal(1) {}
-    Counter::Counter(int initValue) : counterVal(initValue) {
-    }
     // Метод для увеличения значения на 1
     void Counter::increase() {
         counterVal++;

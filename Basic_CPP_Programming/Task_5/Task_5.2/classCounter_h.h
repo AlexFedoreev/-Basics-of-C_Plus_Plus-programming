@@ -5,8 +5,7 @@ private:
 
 public:
 
-    Counter();
-    Counter(int initValue);
+    Counter(int initValue = 1) : counterVal(initValue) {};
     // Метод для увеличения значения на 1
     void increase();
 
